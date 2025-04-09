@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace ThinkMeta.Music.Notation.Fonts.Smufl.Svg;
 
@@ -7,7 +6,6 @@ namespace ThinkMeta.Music.Notation.Fonts.Smufl.Svg;
 /// <see href="https://www.w3.org/TR/SVG11/fonts.html#KernElements"/>
 /// </summary>
 [XmlRoot(ElementName = "hkern", Namespace = "http://www.w3.org/2000/svg")]
-[DebuggerDisplay("{Name1} - {Name2} - {Kerning}")]
 public class SvgKerningPairs
 {
     /// <summary>
@@ -39,9 +37,4 @@ public class SvgKerningPairs
     /// </summary>
     [XmlAttribute("k")]
     public int Kerning { get; set; }
-
-#if DEBUG
-    internal string? Name1 => Unicode1 ?? GlyphName1;
-    internal string? Name2 => Unicode2 ?? GlyphName2;
-#endif
 }
