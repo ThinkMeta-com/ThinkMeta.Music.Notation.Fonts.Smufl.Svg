@@ -14,7 +14,7 @@ public static class SmuflSvgFontReader
     /// </summary>
     /// <param name="path">The file path.</param>
     /// <returns>The SVG font object.</returns>
-    public static async Task<SvgFont> ReadFromFileAsync(string path) => ReadFromString(await File.ReadAllTextAsync(path));
+    public static async Task<SvgFont> ReadFromFileAsync(string path) => ReadFromString(await File.ReadAllTextAsync(path).ConfigureAwait(false));
 
     /// <summary>
     /// Reads a SMuFL SVG font from a stream.
@@ -24,7 +24,7 @@ public static class SmuflSvgFontReader
     public static async Task<SvgFont> ReadFromStreamAsync(Stream stream)
     {
         using var reader = new StreamReader(stream);
-        return ReadFromString(await reader.ReadToEndAsync());
+        return ReadFromString(await reader.ReadToEndAsync().ConfigureAwait(false));
     }
 
     /// <summary>

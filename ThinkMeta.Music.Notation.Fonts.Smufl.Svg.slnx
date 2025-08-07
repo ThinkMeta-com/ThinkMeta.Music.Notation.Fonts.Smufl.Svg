@@ -5,6 +5,7 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
     <File Path="SIL-LICENSE.txt" />
+    <File Path="SolutionFiles/ThinkMeta.Music.Notation.Fonts.Smufl.Svg.Packages.Props" />
   </Folder>
   <Folder Name="/ThinkMeta.SolutionFiles/">
     <File Path="ThinkMeta.SolutionFiles/.clang-format" />
@@ -23,6 +24,7 @@
     <File Path="ThinkMeta.SolutionFiles/ThinkMeta.Net.Build.targets" />
     <File Path="ThinkMeta.SolutionFiles/ThinkMeta.Packages.props" />
   </Folder>
+  <Project Path="ThinkMeta.Music.Notation.Fonts.Smufl.Svg.SmuflSvgCodeGenerator/ThinkMeta.Music.Notation.Fonts.Smufl.Svg.SmuflSvgCodeGenerator.csproj" Id="28f9d7fe-a517-4052-9d47-cade4e6a08de" />
   <Project Path="ThinkMeta.Music.Notation.Fonts.Smufl.Svg.Tests/ThinkMeta.Music.Notation.Fonts.Smufl.Svg.Tests.csproj" />
   <Project Path="ThinkMeta.Music.Notation.Fonts.Smufl.Svg/ThinkMeta.Music.Notation.Fonts.Smufl.Svg.csproj" />
 </Solution>

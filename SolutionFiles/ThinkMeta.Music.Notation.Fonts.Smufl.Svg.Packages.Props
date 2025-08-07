@@ -1,0 +1,6 @@
+<Project>
+    <ItemGroup>
+        <PackageVersion Include="ThinkMeta.Music.Notation.Fonts.Smufl.Metadata" Version="1.0.4" />
+        <PackageVersion Include="ThinkMeta.Music.Notation.Fonts.Smufl.Metadata.Generated" Version="1.0.4" />
+    </ItemGroup>
+</Project>
