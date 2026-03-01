@@ -84,7 +84,7 @@ internal class WpfSmuflSvgCodeGenerator(string[] args) : SmuflSvgCodeGeneratorBa
             .AppendLine($"public static class {Args["class"]}")
             .AppendLine("{");
 
-        var glyphs = Font!.Glyphs.Where(g => g.Unicode?.Length == 1 && g.PathData != null && GlyphNameMappings.GlyphName2CodePointMap.Values.Contains(g.Unicode[0]));
+        var glyphs = Font!.Glyphs.Where(g => g.Unicode?.Length == 1 && g.PathData is not null && GlyphNameMappings.GlyphName2CodePointMap.Values.Contains(g.Unicode[0]));
 
         foreach (var glyph in glyphs) {
             var codePoint = (int)glyph.Unicode[0];
